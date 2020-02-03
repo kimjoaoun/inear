@@ -1,14 +1,14 @@
 Package: inear
 Type: Package
-Title: What the Package Does in One 'Title Case'
-     Line
-Version: 1.0
+Title: Rio de Janeiro's State Air Data
+Version: 0.1
 Date: 2020-02-02
-Author: Your Name
+Authors@R: person("Joao Pedro", "Oliveira dos Santos", email = "joaopsantos@pm.me", role = c("aut", "cre"), comment= c(ORCID= "0000-0003-1752-265X"))
 Maintainer: Your Name <your@email.com>
-Description: One paragraph description of what
-     the package does as one or more full
-     sentences.
+Description: High Speed Tools for Reading and Tidying INEA's QualiAr Meteorogical Data.
 License: GPL (>= 2)
-Imports: Rcpp (>= 1.0.3)
+Imports: 
+        Rcpp (>= 1.0.3),
+        data.table
+
 LinkingTo: Rcpp
