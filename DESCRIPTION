@@ -9,6 +9,8 @@ Description: High Speed Tools for Reading and Tidying INEA's QualiAr Meteorogica
 License: GPL (>= 2)
 Imports: 
         Rcpp (>= 1.0.3),
-        data.table
+        data.table,
+        openxlsx,
+        RCurl
 
 LinkingTo: Rcpp
