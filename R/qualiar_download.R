@@ -2,13 +2,15 @@
 #'
 #' This function downloads and unzips INEA's Qualiar (Air Quality Program) to a temporary folder.
 #'
-#' @param years  
+#' @param years Years which you want to collect the data.
 #' @param ret If TRUE (Default) the function will return a string containing the temporary directory in which the files were saved. 
 #'
-#' @return
-#' @export
+#' @return A string with the location of the downloaded files.
+#' @export 
 #'
-#' @examples
+#' @examples 
+#' qualiar_download(2010, ret= TRUE)
+
 qualiar_download = function(years, ret = TRUE){
   message('Checking if INEA servers are online...')
   
@@ -61,7 +63,7 @@ qualiar_download = function(years, ret = TRUE){
   message(sprintf("Files saved in: %s", temp)) # Telling the user where the files are stored.
   
   if(ret == TRUE){
-    return(paste0(temp, "/inear_files"))
+    return(sprintf("%s/inear_files", temp))
   }
 }
 
