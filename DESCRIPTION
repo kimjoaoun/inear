@@ -10,7 +10,9 @@ License: GPL (>= 2)
 Imports: 
         Rcpp (>= 1.0.3),
         data.table,
-        openxlsx,
-        RCurl
+        rio,
+        RCurl,
+        magrittr,
+        purrr,
 
 LinkingTo: Rcpp
